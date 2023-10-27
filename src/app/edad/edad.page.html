@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>edad</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">edad</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-item>
+        <ion-label position="floating">Nombre:</ion-label>
+        <ion-input type="text" [(ngModel)]="name"></ion-input>
+      </ion-item>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-button expand="full" (click)="generar()">Generar</ion-button>
+      <p>
+        {{ message }}
+        <ion-text *ngIf="age >= 18">Mayor de edad</ion-text>
+        <ion-text *ngIf="age < 18">Menor de edad</ion-text>
+      </p>
+      <ion-img *ngIf="message === 'Joven'" src="/assets/icon/joven.jpg"></ion-img>
+      <ion-img *ngIf="message === 'Adulto'" src="/assets/icon/adulto.jpg"></ion-img>
+      <ion-img *ngIf="message === 'Anciano'" src="/assets/icon/anciano.jpg"></ion-img>
+      <p>Edad: {{ age }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

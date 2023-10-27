@@ -1,0 +1,7 @@
+{
+  "name": "tarea-6-couteau",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,23 @@
+
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .responsive-text {
+      font-size: 16px;
+    }
+  }
+  
+  /* Estilos para tabletas */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .responsive-text {
+      font-size: 18px;
+    }
+  }
+  
+  /* Estilos para escritorio */
+  @media screen and (min-width: 1025px) {
+    .responsive-text {
+      font-size: 20px;
+    }
+  }
+  

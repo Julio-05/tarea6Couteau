@@ -1,0 +1,26 @@
+ion-content {
+    max-width: 100%;
+    padding: 20px; 
+  }
+  
+  
+  ion-button {
+    max-width: 50%;
+    display: block;
+    margin: 0 auto; 
+    margin-top: 20px; 
+  }
+  
+ 
+  ion-item {
+    max-width: 100%;
+  }
+  
+ 
+  ion-item p {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  

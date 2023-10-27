@@ -1,0 +1,28 @@
+ion-content {
+    max-width: 100%;
+    padding: 20px; 
+  }
+  
+
+  ion-button {
+    max-width: 50%;
+    display: block;
+    margin: 0 auto; 
+    margin-top: 20px; 
+  }
+  
+  
+  ion-img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+  }
+  
+  ion-card-content p {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  

@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>genero</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label position="floating">Inserte un nombre</ion-label>
+    <ion-input [(ngModel)]="name" type="text"></ion-input>
+  </ion-item>
+  <ion-button (click)="generar()" expand="block">Generar</ion-button>
+
+  <ion-list *ngIf="name != '' && genero != ''">
+    <ion-item *ngIf="genero == 'female'">
+      <p class="p1">Femenino</p>
+    </ion-item>
+    <ion-item *ngIf="genero == 'male'">
+      <p class="p2">Masculino</p>
+    </ion-item>
+
+    <ion-item>
+      <div [style.background-color]="genero == 'female' ? 'pink' : 'lightblue'">
+        <p>Fondo de color</p>
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>
